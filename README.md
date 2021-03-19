@@ -18,9 +18,11 @@ Questo can be installed on any device running Windows or MacOS. However, a web v
 MacOS:
  
 Run the app by running the .app file
+![MacOS Download Link](https://cdn.discordapp.com/attachments/801679194790428723/822562833047879760/Questo.zip)
 
 Windows:
 Run the app by extracting the zip and running the .exe from within the directory the file was unextracted to
+![Windows Download Link](https://cdn.discordapp.com/attachments/801679194790428723/822562833047879760/Questo.zip)
 
 Web:
 https://quizfrontend.carcraftz.repl.co/
