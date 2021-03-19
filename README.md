@@ -8,6 +8,25 @@ Questo uses a node.js backend with mongoDB atlas, and a vue.js frontend (with so
 
 Results from your quizzes are stored on the cloud and sync across your devices
 
+### Libraries/frameworks used
+
+Backend:
+https://nodejs.org/en/docs/
+https://docs.mongodb.com/drivers/
+https://www.npmjs.com/package/bcrypt
+https://www.fastify.io/
+https://nodemailer.com/about/
+
+Frontend:
+https://vuejs.org/
+https://ned.im/noty/#/
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+https://fontawesome.com/
+
+Desktop App:
+https://www.electronjs.org/
+https://github.com/nativefier/nativefier
+
 ## How To Use
 
 In order to use Questo, follow these instructions.
@@ -48,3 +67,6 @@ To take a quiz, click the create quiz button on the dashboard. Then type in the 
 
 ### Viewing Results
 Once your quiz is graded, you will be able to see the questions you answered incorrectly. This report will be saved to your account, and emailed to you. To access it, you can simply go back to the dashboard to view all your quiz results
+
+
+
