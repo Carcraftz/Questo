@@ -12,19 +12,27 @@ Results from your quizzes are stored on the cloud and sync across your devices
 
 Backend:
 https://nodejs.org/en/docs/
+
 https://docs.mongodb.com/drivers/
+
 https://www.npmjs.com/package/bcrypt
+
 https://www.fastify.io/
+
 https://nodemailer.com/about/
 
 Frontend:
 https://vuejs.org/
+
 https://ned.im/noty/#/
+
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
 https://fontawesome.com/
 
 Desktop App:
 https://www.electronjs.org/
+
 https://github.com/nativefier/nativefier
 
 ## How To Use
