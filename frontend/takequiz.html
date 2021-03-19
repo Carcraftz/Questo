@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Questo</title>
+  <link href="stylequiz.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
+
+  </script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="navbar">
+   <h1 style = "cursor:pointer" onclick = 'location.href = "index.html"' id="title">
+			Questo
+		</h1>
+    <button id="action" onclick="logout()">
+      Log Out
+    </button>
+  </div>
+  <div id="content">
+    <div id="quiz-app">
+
+      <div class="pdiv" v-for="question in questionArray" v-bind:class="{'correctans': gotResults &&question.isCorrect, 'wrongans': !question.isCorrect && gotResults}">
+
+        <div class = "mc" v-if="question.type == 'mc'">
+          <h1 class="cardtitle">{{question.question}} <i class="far fa-check-circle" v-if="gotResults && question.isCorrect"
+              style="color:green"></i><i class="far fa-times-circle" v-if="gotResults && !question.isCorrect" style="color:red"></i></h1>
+          <br>
+          <div class="mccontainer">
+            <button onclick="submitmc(this)" v-for="answer in question.answers" class="mcanswer">{{answer}}</button>
+          </div>
+        </div>
+        <div class = "fillin" v-else-if="question.type == 'fillin'">
+
+          <h1 class="cardtitle">{{question.slug}} <i class="far fa-check-circle" v-if="gotResults && question.isCorrect"
+              style="color:green"></i><i class="far fa-times-circle" v-if="gotResults && !question.isCorrect" style="color:red"></i></h1>
+          <br>
+          <div class="mccontainer">
+            <input class='fillinput'></input>
+          </div>
+        </div>
+        <div class = "dropdown" v-else-if="question.type == 'dropdown'">
+
+          <h1 class="cardtitle">{{question.slug}} <i class="far fa-check-circle" v-if="gotResults && question.isCorrect"
+              style="color:green"></i><i class="far fa-times-circle" v-if="gotResults && !question.isCorrect" style="color:red"></i></h1>
+          <br>
+          <div class="mccontainer">
+            <select class='dropdownbox'>
+              <option v-for="option in question.answers">{{option}}</option>
+            </select>
+          </div>
+        </div>
+        <div class = "truefalse" v-else-if="question.type == 'truefalse'">
+          <h1 class="cardtitle">{{question.question}} <i class="far fa-check-circle" v-if="gotResults && question.isCorrect"
+              style="color:green"></i><i class="far fa-times-circle" v-if="gotResults && !question.isCorrect" style="color:red"></i></h1>
+          <br>
+          <div class="mccontainer">
+            <button onclick="submittf(this)" class="mcanswer">True</button>
+            <button onclick="submittf(this)" class="mcanswer">False</button>
+          </div>
+        </div>
+
+        <div class = "matching" class="mccontainer" v-else-if="question.type == 'matching'">
+          <h1 class="cardtitle">{{question.question}} <i class="far fa-check-circle" v-if="gotResults && question.isCorrect"
+              style="color:green"></i><i class="far fa-times-circle" v-if="gotResults && !question.isCorrect" style="color:red"></i></h1>
+          <br>
+          <div v-for="i in question.left.length">
+            <select class='dropdownbox'>
+              <option v-for="option in question.left">{{option}}</option>
+            </select>
+            <select class='dropdownbox'>
+              <option v-for="option in question.right">{{option}}</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <button onclick="submitquiz()" id="submit">Submit Quiz &nbsp <i class="fas fa-cloud-upload-alt"></i></button>
+			<br>
+      <button onclick="printstate()" id="print">Print results &nbsp <i class="fas fa-print"></i></button>
+
+
+  </div>
+  <script src="scriptquiz.js"></script>
+</body>
+
+</html>

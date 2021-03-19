@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Questo</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
+
+	</script>
+
+</head>
+
+<body>
+	<div id="navbar">
+		<h1 style="cursor:pointer" onclick='location.href = "index.html"' id="title">
+			Questo
+		</h1>
+		<button id="action" onclick="logout()">
+            Log Out
+        </button>
+      </div>
+			<div id="content">
+          <div id="dashboard-app">
+					        <div class = "pdiv" v-for="user in submissionArray">
+										<h1 class = "cardtitle" >Completed in: {{user.stats.time}}</h1>
+										<h1 class = "cardpercent" >Scored: {{((user.stats.earned)/(user.stats.attempted)*100).toFixed(2)}}%</h1>
+										<h1 class = "carddetails" >Got {{user.stats.earned}} questions correct out of {{user.stats.attempted}}</h1>
+										<button @click = "visitResults(user)" class = "viewmore">View quiz results</button>
+									</div>
+									       							<button id = "createquiz" onclick = "createquiz()" id = "create">Create Quiz  &nbsp <i class="fas fa-pencil-alt"></i></button>
+																			 <br>																			 <br>
+																			 <br>
+																			 <br>
+																			 <br>
+																			 <br>
+
+
+					</div>
+
+      </div>
+			
+    <script src="script.js"></script>
+  </body>
+</html>

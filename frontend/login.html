@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Questo</title>
+	<link href="login.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
+	</script>
+	   <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js" integrity="sha512-oFOCo2/3DtjrJG4N27BjSLQWoiBv171sK6a+JiWjp/7agxC2nCUP358AqzxkBUb5jX8g6CYLPdSKQTbC0weCwA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+
+<body>
+	<div id="navbar">
+		<h1 style="cursor:pointer" onclick='location.href = "index.html"' id="title">
+			Questo
+		</h1>
+		<button id="action" onclick="login()">
+            Log In
+        </button>
+      </div>
+			<div id="content">
+           <div id = "logincard">
+						 <h1 id = "loginheader">Log In</h1>
+						 <img id = "loginimg" src = "pano.svg"></img>
+						 <p id="logintext">Questo allows you to practice your FBLA skills interactively on the go, cross platform. With a constantly growing database and live syncing we help you be your best!</p>
+						 <input id = "email" placeholder="Email"></input>
+						 <input id = "password" type="password" placeholder="Password"></input>
+						 <button onclick = "submitlogin()" id = "loginbutton">Submit</button>
+						 </div>      
+      </div>
+    <script src="login.js"></script>
+  </body>
+</html>

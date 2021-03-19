@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  min-width: 100%;
+}
+#navbar {
+  border-top: 5px solid black;
+  color: #005ADC;
+  border-color: #005ADC;
+  position: relative;
+}
+#title {
+  padding: 1vw;
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  float: left;
+}
+#action {
+  float: right;
+  background: #005ADC;
+  border: none;
+		cursor:pointer;
+  margin-right: 2vw;
+  margin-top: 1vw;
+  color: white;
+  margin-bottom: 1vw;
+  padding: 10px;
+  width: 10%;
+  min-width: 100px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#content {
+  margin-top: 100px;
+  display: flex;
+align-items: flex-start;
+  justify-content: center;
+  height: 89vh;
+}
+#redeemcontent {
+  margin-top: 100px;
+  height: 89vh;
+}
+#createcontainer {
+  width: 60vw;
+  height: 40vh;
+  border-radius: 10px;
+  text-align: center;
+}
+#createtitle {
+  color: white;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1em;
+}
+#redeemtitle {
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1em;
+}
+#redeeminfo {
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1em;
+}
+#login {
+  z-index: 10;
+  position: absolute;
+  height: 50vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 5px solid black;
+  background:white;
+   border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #005ADC;
+  border-color: #005ADC;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+
+}
+
+.pdiv{
+	border-radius:20px;
+	margin-left:10vw;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right:10vw;
+	margin-bottom:4vh;
+	width:75vw;
+	max-width:800px;
+	min-width:300px ;
+	min-height:200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);}
+
+#quiz-app{
+	text-align:center;
+}
+.cardtitle{
+text-align:center;
+font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+	font-size:30px;
+margin-top:30px;
+
+}
+.cardpercent{
+text-align:center;
+font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+		font-size:20px;
+
+}
+.carddetails{
+text-align:center;
+font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+font-size:15px;
+margin-bottom:20px;
+}
+.viewmore{
+	  background: #005ADC;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 0px 0px 20px 20px;
+	cursor:pointer;
+}
+.mccontainer{
+	display: flex;
+	flex-direction:column;
+		align-items: center;
+justify-content: center;
+}
+.mcanswer{
+	background: #005ADC;
+  border: none;
+  color: white;
+  padding: 10px;
+	margin-bottom:20px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 20px 20px 20px 20px;
+	cursor:pointer;
+
+width:50%
+}
+.fillinput {
+	padding:15px;
+	border-radius:20px;
+	border: 3px solid #005ADC;
+	margin-bottom:20px;
+}
+.dropdownbox {
+	padding:15px;
+	border-radius:20px;
+	border: 3px solid #005ADC;
+	margin-bottom:20px;
+	max-width:300px;
+}
+
+.correctans {
+border:3px solid green ;
+	border-radius:20px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+height:100%
+}
+
+.wrongans{
+	border:3px solid red ;
+	border-radius:20px;
+
+}
+
+*:focus {
+    outline: none;
+}
+#submit{
+		  background: #005ADC;
+  border: none;
+  color: white;
+	margin-top:2em;
+	padding:20px;
+	height:3em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+	cursor: pointer;
+	text-align:center;
+}
+#print{
+	  margin-bottom: 2em;
+			  background: #005ADC;
+  border: none;
+  color: white;
+	margin-top:2em;
+	padding:20px;
+	height:3em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+	cursor: pointer;
+	text-align:center;
+
+}
